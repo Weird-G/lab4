@@ -4,6 +4,7 @@ from fastapi.templating import Jinja2Templates
 import csv
 import aiohttp
 import asyncio
+import uvicorn
 
 
 # Create an instance of the FastAPI application
@@ -73,6 +74,6 @@ async def fetch_weather():
     return cities
 
 
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="localhost", port=8080)
+# if __name__ == "__main__":
+#     import uvicorn
+#     uvicorn.run(app, host="localhost", port=8080)
